@@ -1,0 +1,14 @@
+clc;
+clear all; close all; t=0:0.001:2;
+s1=6*sin(2*pi*5*t); subplot(4,1,1);
+plot(t,s1,'g');
+xlabel('time'); ylabel('amplitude');
+title('first signal'); s2=8*sin(2*pi*5*t); subplot(4,1,2);
+plot(t,s2,'r');
+xlabel('time'); ylabel('amplitude'); title('second signal'); s3=s1+s2; subplot(4,1,3);
+plot(t,s3,'g');
+xlabel('time'); ylabel('amplitude'); title('sum of two signals'); s4=s1.*s2;
+subplot(4,1,4);
+plot(t,s4,'g');
+xlabel('time'); ylabel('amplitude');
+title('multiplication of two signals');
